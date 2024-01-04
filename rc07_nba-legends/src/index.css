@@ -16,7 +16,13 @@ body {
   max-width: 280px;
   min-width: 230px;
 }
+.player-card:hover {
+  box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, 0.5);
+}
 
 .player-logo {
   height: 350px;
+}
+.player-card: hover .player-logo {
+  transform: scale(0.95);
 }
