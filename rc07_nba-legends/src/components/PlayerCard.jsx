@@ -1,11 +1,11 @@
 import Card from "react-bootstrap/Card";
 
-const PlayerCard = ({ name, img, statistic }) => {
+const PlayerCard = () => {
   return (
-    <Card className="rounded-2 m-auto player-card" role="button">
-      <Card.Img variant="top" src={img} className="player-logo" />
+    <Card>
+      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
       <Card.Footer>
-        <Card.Title>{name}</Card.Title>
+        <Card.Title>Card Link</Card.Title>
       </Card.Footer>
     </Card>
   );
