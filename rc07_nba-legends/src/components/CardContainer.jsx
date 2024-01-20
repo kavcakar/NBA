@@ -26,7 +26,7 @@ const CardContainer = () => {
             .filter((player) =>
               player.name
                 .toLocaleLowerCase()
-                .includes(search.toLocaleLowerCase())
+                .includes(search.trim().toLocaleLowerCase())
             )
             .map((player, i) => (
               <Col md={6} lg={4} xl={3} key={i}>
