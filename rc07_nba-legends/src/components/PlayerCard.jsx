@@ -3,10 +3,12 @@ import Card from "react-bootstrap/Card";
 
 const PlayerCard = ({ name, img, statistics }) => {
   const [showImage, setShowImage] = useState(true);
+  const handleClick = () => setShowImage(!showImage);
 
   return (
     <Card
-      onClick={() => setShowImage(!showImage)}
+      // onClick={() => setShowImage(!showImage)}
+      onClick={handleClick}
       className="rounded-2 m-auto player-card"
       role="button"
     >
